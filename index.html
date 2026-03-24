@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Inventory System - INR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>📦 Inventory Manager (INR)</h1>
+        <p>Add, edit, or remove stock. All values are in Indian Rupees (₹).</p>
+    </header>
+
+    <!-- Add / Edit Form -->
+    <section class="form-section">
+        <h2>Add New Item</h2>
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Item Name (e.g., Wireless Mouse)" required>
+            <input type="number" id="itemQty" placeholder="Quantity" min="0" required>
+            <input type="number" id="itemPrice" placeholder="Price in ₹ (e.g., 499)" min="0" step="0.01" required>
+            
+            <div class="btn-group">
+                <button type="submit" id="saveBtn">Add Item</button>
+                <button type="button" id="cancelBtn" style="display:none;">Cancel Edit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Inventory List -->
+    <section class="list-section">
+        <input type="text" id="searchBox" placeholder="🔍 Search items by name...">
+        
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total Value</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows added dynamically -->
+            </tbody>
+        </table>
+
+        <div class="summary-card">
+            <span>Total Stock Units: <strong id="totalUnits">0</strong></span>
+            <span>Total Inventory Value: <strong id="totalValue">₹0.00</strong></span>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

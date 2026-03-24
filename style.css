@@ -1,0 +1,113 @@
+/* Global Reset & Fonts */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+    background: #f5f7fa; 
+    color: #333; 
+    line-height: 1.6;
+    padding: 20px; 
+}
+
+.container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background: #fff; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+/* Header */
+header { text-align: center; margin-bottom: 25px; }
+header h1 { color: #2c3e50; margin-bottom: 5px; }
+header p { color: #7f8c8d; font-size: 0.95rem; }
+
+/* Form Section */
+.form-section { 
+    background: #ecf0f1; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+}
+.form-section h2 { margin-bottom: 15px; color: #27ae60; }
+
+form input { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 12px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+}
+form input:focus { 
+    outline: none; 
+    border-color: #3498db; 
+    box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+}
+
+.btn-group { display: flex; gap: 10px; }
+button { 
+    flex: 1; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    transition: 0.2s;
+}
+#saveBtn { background: #27ae60; color: white; }
+#saveBtn:hover { background: #229954; }
+#cancelBtn { background: #95a5a6; color: white; }
+#cancelBtn:hover { background: #7f8c8d; }
+
+/* List Section */
+.list-section { margin-top: 20px; }
+#searchBox { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 1rem;
+}
+
+/* Table Styling */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background: #fff;
+}
+thead { background: #34495e; color: #fff; }
+th, td { 
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+tr:hover { background: #f9f9f9; }
+
+/* Action Buttons */
+button.action-btn { 
+    padding: 6px 12px; 
+    margin-right: 5px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 0.85rem; 
+}
+.edit-btn { background: #f39c12; color: white; }
+.edit-btn:hover { background: #e67e22; }
+.delete-btn { background: #e74c3c; color: white; }
+.delete-btn:hover { background: #c0392b; }
+
+/* Summary Card */
+.summary-card { 
+    display: flex; 
+    justify-content: space-around; 
+    background: #d5dbdb; 
+    padding: 15px; 
+    border-radius: 8px; 
+    font-weight: 600; 
+    font-size: 1.1rem;
+}
